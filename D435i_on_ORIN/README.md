@@ -60,7 +60,7 @@ realsense-viewer
 - RGB Module——RGB图
 - Motion Module——机载IMU
 
-<img src="./image/realsense viewer.png"/>
+<img src="./image/realsense viewer.png" style="zoom:100%;" />
 
 
 
@@ -170,7 +170,7 @@ roslaunch realsense2_camera rs_camera.launch
 rostopic list
 ```
 
-<img src="./image/rostopic list.png"/>
+<img src="./image/rostopic list.png" style="zoom:100%;" />
 
 
 
@@ -198,4 +198,4 @@ rviz
 
 若在直接安装方法中直接下载最新的RealSenseSDK包，在启动ROS相机节点后，可能会出现以下无关紧要的错误信息，可能是固件和SDK版本不匹配的原因，可以尝试下载其他版本的包
 
-<img src="./image/error information.png" />
+<img src="./image/error information.png" style="zoom:100%;" />
