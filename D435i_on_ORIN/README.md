@@ -1,7 +1,3 @@
----
-typora-root-url: ./image
----
-
 # NVIDIA JETSON AGX ORIN在Ubuntu20.04上部署D435i相机
 
 
@@ -64,7 +60,7 @@ realsense-viewer
 - RGB Module——RGB图
 - Motion Module——机载IMU
 
-![](/realsense viewer.png)
+![](./image/realsense viewer.png)
 
 
 
@@ -174,7 +170,7 @@ roslaunch realsense2_camera rs_camera.launch
 rostopic list
 ```
 
-<img src="/rostopic list.png" style="zoom:100%;" />
+![](./image/rostopic list.png)
 
 
 
@@ -190,9 +186,9 @@ rviz
 
 注：如果无法显示，可能是`rs_camera.launch`文件没有配置好，可以在本文所在目录下找到配置好的文件
 
-<img src="/rviz topic.png" style="zoom:125%;" />
+<img src="./image/rviz topic.png" style="zoom:125%;" />
 
-<img src="/rviz view.png" style="zoom:150%;" />
+<img src="./image/rviz view.png" style="zoom:150%;" />
 
 
 
@@ -202,4 +198,4 @@ rviz
 
 若在直接安装方法中直接下载最新的RealSenseSDK包，在启动ROS相机节点后，可能会出现以下无关紧要的错误信息，可能是固件和SDK版本不匹配的原因，可以尝试下载其他版本的包
 
-![](/error information.png)
+![](./image/error information.png)
