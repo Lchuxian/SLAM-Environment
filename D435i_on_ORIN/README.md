@@ -60,7 +60,7 @@ realsense-viewer
 - RGB Module——RGB图
 - Motion Module——机载IMU
 
-![](./image/realsense viewer.png)
+<img src="./image/realsense viewer.png"/>
 
 
 
@@ -105,7 +105,7 @@ sudo apt-get install ros-noetic-realsense2-description
 
 
 
-ORIN是ARM架构的，源码编译可能会出现很多问题，**不推荐**
+ORIN是ARM架构的，源码编译可能会出现很多问题**（不推荐）**
 
 安装ros-noetic-rgbd-launch
 
@@ -170,7 +170,7 @@ roslaunch realsense2_camera rs_camera.launch
 rostopic list
 ```
 
-![](./image/rostopic list.png)
+<img src="./image/rostopic list.png"/>
 
 
 
@@ -198,4 +198,4 @@ rviz
 
 若在直接安装方法中直接下载最新的RealSenseSDK包，在启动ROS相机节点后，可能会出现以下无关紧要的错误信息，可能是固件和SDK版本不匹配的原因，可以尝试下载其他版本的包
 
-![](./image/error information.png)
+<img src="./image/error information.png" />
