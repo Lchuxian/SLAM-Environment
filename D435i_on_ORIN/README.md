@@ -6,7 +6,7 @@
 
 
 
-在安装时，建议先拔出D435i相机，然后执行以下指令
+在安装时，建议先拔出D435i相机（但本人试过似乎没有影响），然后执行以下指令
 ```shell
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 
@@ -29,8 +29,10 @@ sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C
 服务器添加到存储库列表
 
 ```shel
-sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo bionic main" -u
+sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo focal main" -u
 ```
+
+其中，`focal`表示Ubuntu20.04的版本号
 
 
 
@@ -144,7 +146,7 @@ catkin_make install
 添加bashrc环境变量
 
 ```shell
-echo "source ~/realsense_ws/devel/setup.bash" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -184,7 +186,9 @@ rostopic list
 rviz
 ```
 
-注：如果无法显示，可能是`rs_camera.launch`文件没有配置好，可以在本文所在目录下找到配置好的文件
+注：如果无法显示或无相关topic，可能是`rs_camera.launch`文件没有配置好，可以在本文所在目录下找到配置好的文件
+
+如果使用的是直接安装的方法，则launch文件的路径在`/opt/ros/noetic/share/realsense2_camera/launch/rs_camera.launch`
 
 <img src="./image/rviz topic.png" style="zoom:125%;" />
 
@@ -196,6 +200,23 @@ rviz
 
 
 
-若在直接安装方法中直接下载最新的RealSenseSDK包，在启动ROS相机节点后，可能会出现以下无关紧要的错误信息，可能是固件和SDK版本不匹配的原因，可以尝试下载其他版本的包
+### 4.1 D435i发送报错信息
+
+
+
+若在直接安装方法中直接下载最新的RealSenseSDK包，在启动ROS相机节点后，可能会出现以下无关紧要的错误信息，可能是固件和SDK版本不匹配的原因，可以尝试下载其他版本的包，但是仍然可以发布RGB和Depth话题，所以可以不理会
 
 <img src="./image/error information.png" style="zoom:100%;" />
+
+
+
+### 4.2 修改launch文件
+
+
+
+有时候找不到启动文件或功能包，记得在工作空间下执行一下`.bash`脚本，否则可能会出错
+
+```shell
+cd ~/catkin_ws
+source devel/setup.bash
+```
