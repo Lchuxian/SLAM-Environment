@@ -1,6 +1,6 @@
 set(the_description "Images stitching")
 
-INCLUDE_DIRECTORIES("/home/lcx/opencv-3.4.6-build/opencv_contrib-3.4.6/modules/xfeatures2d/include")
+INCLUDE_DIRECTORIES("~/opencv-3.4.6-build/opencv_contrib-3.4.6/modules/xfeatures2d/include")
 
 if(HAVE_CUDA)
   ocv_warnings_disable(CMAKE_CXX_FLAGS -Wundef -Wmissing-declarations -Wshadow)
