@@ -413,7 +413,7 @@ find_package(OpenCV ${_opencv_version} REQUIRED
 
 替换成以下内容：（注：`OpenCV4`的**OpenCV_DIR**路径和`OpenCV3`不同，主要是找`OpenCVConfig.cmake`文件，看注释）
 
-```shell
+```cmake
 # 如果是OpenCV4，则第一行修改为下面这一行
 # set(OpenCV_DIR ~/opencv-4.5.5/lib/cmake/opencv4)
 set(OpenCV_DIR ~/opencv-3.4.6/share/OpenCV)
@@ -523,7 +523,7 @@ set(BOOST_INCLUDEDIR ~/boost_1_82_0)
 
 `OpenCV3`的设置如下：
 
-```shell
+```cmake
 # OpenCV3：
 set(cv_bridge_DIR ~/cv_bridge3/share/cv_bridge/cmake)
 set(OpenCV_DIR ~/opencv-3.4.6/share/OpenCV)
@@ -533,7 +533,7 @@ set(OpenCV_DIR ~/opencv-3.4.6/share/OpenCV)
 
 `OpenCV4`的设置如下：
 
-```shell
+```cmake
 # OpenCV4：
 set(cv_bridge_DIR ~/cv_bridge4/share/cv_bridge/cmake)
 set(OpenCV_DIR ~/opencv-4.5.5/lib/cmake/opencv4)
