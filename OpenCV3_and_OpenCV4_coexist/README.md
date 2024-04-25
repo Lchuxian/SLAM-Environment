@@ -314,7 +314,7 @@ strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 
 
 
-原因是找不到`cuda.hpp`文件，在`/opencv-3.4.6/modules/stitching/CMakeLists.txt`文件中增加如下内容即可（根据自己的安装路径修改）：
+原因是找不到`cuda.hpp`文件，在`/opencv-3.4.6-build/modules/stitching/CMakeLists.txt`文件中增加如下内容即可（根据自己的安装路径修改）：
 
 ```cmake
 INCLUDE_DIRECTORIES("~/opencv-3.4.6-build/opencv_contrib-3.4.6/modules/xfeatures2d/include")
