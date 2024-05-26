@@ -33,7 +33,7 @@ sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 
 
 
-本文安装的是`opencv-3.4.6`和`opencv-4.5.5`，可根据需要安装不同的版本，操作一样，如果希望安装相同的版本，可以直接下载本文附带的文件`opencv-3.4.6-build`和`opencv-4.5.5-build`
+本文安装的是`opencv-3.4.6`和`opencv-4.5.5`，可根据需要安装不同的版本，操作一样，如果希望安装相同的版本，可以直接下载本文附带的文件`opencv-3.4.6-build`和`opencv-4.5.5-build`，这里只是以OpenCV为例，对于其他库的多版本共存是同理的
 
 
 
