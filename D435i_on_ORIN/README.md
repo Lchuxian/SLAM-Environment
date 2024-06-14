@@ -107,7 +107,7 @@ sudo apt-get install ros-noetic-realsense2-description
 
 
 
-ORIN是ARM架构的，源码编译可能会出现很多问题**（不推荐）**
+ORIN是ARM架构的，源码编译可能会出现很多问题 **（不推荐）**
 
 安装ros-noetic-rgbd-launch
 
