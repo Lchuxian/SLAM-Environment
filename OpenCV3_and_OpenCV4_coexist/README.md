@@ -444,6 +444,15 @@ cmake -D CMAKE_INSTALL_PREFIX=~/cv_bridge3 ..
 
 
 
+最后编译安装即可：
+```shell
+# 使用16个CPU核编译
+make -j16
+sudo make install
+```
+
+
+
 ### 3.3 安装/编译cv_bridge的常见报错
 
 
@@ -517,7 +526,7 @@ set(BOOST_INCLUDEDIR ~/boost_1_82_0)
 
 
 
-在`CMakeLists.txt`中指定`OpenCV`和`cv_bridge`的路径（主要是`OpenCVConfig.cmake`和`cv_bridgeConfig.cmake`两个文件）
+在`CMakeLists.txt`中指定`OpenCV`和`cv_bridge`的路径（主要是`OpenCVConfig.cmake`和`cv_bridgeConfig.cmake`两个文件），写在`find_package`前：
 
 
 
@@ -538,4 +547,5 @@ set(OpenCV_DIR ~/opencv-3.4.6/share/OpenCV)
 set(cv_bridge_DIR ~/cv_bridge4/share/cv_bridge/cmake)
 set(OpenCV_DIR ~/opencv-4.5.5/lib/cmake/opencv4)
 ```
+
 
